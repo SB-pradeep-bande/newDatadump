@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: fgu9qotjzdddk
+  id: z9fwmbr3pkvs7
 info:
   title: Analytics
   version: '1.0'
@@ -24,168 +24,168 @@ paths:
   /analytics/scrape/flexApi/plaid/transferSweeps:
     get:
       summary: GET scrape plaid transfer sweeps
+      x-stoplight:
+        id: b3sizfo36aaq7
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-flex-api-plaid-transfer-sweeps
-      x-stoplight:
-        id: z1ytb2xb1bsf7
       description: Endpoint to scrape and store data from /plaid/transferSweeps
     parameters: []
   /analytics/scrape/flexApi/lithic/treasury:
     get:
       summary: GET scrape lithic treasury
+      x-stoplight:
+        id: hri4r912day7x
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-flexApi-lithic-treasury
-      x-stoplight:
-        id: 85nzd3q9ohvns
       description: Endpoint to scrape and store data from /lithic/treasury
   /analytics/scrape/flexApi/servicing/bookSummary:
     get:
       summary: GET scrape servicing book summary
+      x-stoplight:
+        id: cibo7nsvgi3s7
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-flexApi-servicing-bookSummary
-      x-stoplight:
-        id: 13p4l43avlaem
       description: Endpoint to scrape and store data from /servicing/bookSummary
   /analytics/scrape/hubspot/account/users:
     get:
       summary: GET scrape Hubspot account users
+      x-stoplight:
+        id: b0t9hik5jmo7o
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-hubspot-account-users
-      x-stoplight:
-        id: 02tqe4g4pqnrt
       description: Endpoint to scrape and store data for Flex's Hubspot account users
   /analytics/scrape/hubspot/goals:
     get:
       summary: GET scrape Hubspot goals
+      x-stoplight:
+        id: 8iw0q5gd7ss1n
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-hubspot-goals
-      x-stoplight:
-        id: 82pop7y6vadro
       description: Endpoint to scrape and store data for Flex's Hubspot goals
   /analytics/scrape/hubspot/companies:
     get:
       summary: GET scrape Hubspot companies
+      x-stoplight:
+        id: lxo889ek62rmj
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-hubspot-companies
-      x-stoplight:
-        id: 11wer2q3wrqer
       description: Endpoint to scrape and store data for Flex's Hubspot companies
   /analytics/scrape/hubspot/contacts:
     get:
       summary: GET scrape Hubspot contacts
+      x-stoplight:
+        id: 4xvjrvduhnjy3
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-hubspot-contacts
-      x-stoplight:
-        id: 64qed7y7preif
       description: Endpoint to scrape and store data for Flex's Hubspot contacts
   /analytics/scrape/hubspot/deals:
     get:
       summary: GET scrape Hubspot deals
+      x-stoplight:
+        id: x6idlyfsa53jv
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-hubspot-deals
-      x-stoplight:
-        id: 16wqa4t3aieng
       description: Endpoint to scrape and store data for Flex's Hubspot deals
   /analytics/scrape/hubspot/monthlySpend:
     get:
       summary: GET scrape Hubspot monthlySpend
+      x-stoplight:
+        id: zgdjm1e9zwpm6
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-hubspot-monthly-spend
-      x-stoplight:
-        id: 83yqv3q0reqfp
       description: Endpoint to scrape and store data for Flex's Hubspot monthlySpend
   /analytics/scrape/hubspot/events:
     get:
       summary: GET scrape Hubspot events
+      x-stoplight:
+        id: ubopsyvmsoqfn
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-hubspot-events
-      x-stoplight:
-        id: 44zze4t6oolae
       description: Endpoint to scrape and store data for Flex's Hubspot events
   /analytics/scrape/hubspot/onboarding:
     get:
       summary: GET scrape Hubspot onboarding
+      x-stoplight:
+        id: 2jl5snl1ygccp
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-hubspot-onboarding
-      x-stoplight:
-        id: 92por1q4yepza
       description: Endpoint to scrape and store data for Flex's Hubspot onboarding
   /analytics/scrape/hubspot/accountManagement:
     get:
       summary: GET scrape Hubspot accountManagement
+      x-stoplight:
+        id: rtz31tctlyt0v
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-hubspot-account-management
-      x-stoplight:
-        id: 02liz7z5aufqe
       description: Endpoint to scrape and store data for Flex's Hubspot accountManagement
-  /analytics/scrape/banking/accounts/{bankAccountId}:
+  '/analytics/scrape/banking/accounts/{bankAccountId}':
     parameters:
       - $ref: '#/components/parameters/bankAccountId'
     get:
       summary: Scrape a specific Flex Bank Account
+      x-stoplight:
+        id: dc9qinywc6sb6
       tags:
         - Analytics
       responses:
         '200':
           description: OK
       operationId: get-scrape-banking-account
-      x-stoplight:
-        id: 19zil7z5e9fzr
       description: Endpoint to scrape and store data for Flex's Card Funding Account
 components:
   schemas:
     ListMetricResult:
       title: ListMetricResult
       x-stoplight:
-        id: ubpl71qztdb5z
+        id: ya5w8c7t3z6l2
       type: object
       description: 'For a given metric, result is a timeseries of that metric with accompanying metadata'
       properties:
@@ -212,7 +212,7 @@ components:
     MetricHistory:
       title: MetricHistory
       x-stoplight:
-        id: 24wwdkbec28kl
+        id: dhzbyiiury6wh
       type: object
       properties:
         date:

@@ -91,6 +91,8 @@ paths:
       - $ref: '#/components/parameters/businessId'
     get:
       summary: Get statement transactions
+      x-stoplight:
+        id: xdysnoexk4il7
       responses:
         '200':
           description: OK
@@ -99,8 +101,6 @@ paths:
               schema:
                 type: string
       operationId: generateTransactionDownload
-      x-stoplight:
-        id: r0xvle73w8oyt
       description: 'generates an arbitrary export of formatted transactions.  If no startDate or endDate is defined, all transactions for the business will be returned.'
       parameters:
         - schema:
@@ -128,6 +128,8 @@ paths:
         description: The Account Identifier
     get:
       summary: Get statements list
+      x-stoplight:
+        id: wujgt52ivtccw
       responses:
         '200':
           description: OK
@@ -144,8 +146,6 @@ paths:
                 items:
                   $ref: '#/components/schemas/StatementInfo'
       operationId: getStatements
-      x-stoplight:
-        id: r0xvle73w8oyt
       description: gets a list of statements for a given business.
       parameters:
         - schema:
@@ -179,6 +179,8 @@ paths:
         description: short term this will need to be the vendor specific ID for the statement. Vendor generates this async on their side.
     get:
       summary: Get Statement by ID
+      x-stoplight:
+        id: gb8wmijez7z4k
       responses:
         '200':
           description: OK
@@ -199,8 +201,6 @@ paths:
                 type: string
               description: how client should interact and suggested name
       operationId: getStatementsById
-      x-stoplight:
-        id: r0xvle73w8oyt
       description: get a specific statement in either html or PDF format
       parameters: []
       tags:

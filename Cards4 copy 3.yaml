@@ -1,6 +1,6 @@
 openapi: 3.1.0
 x-stoplight:
-  id: 43ky77fie1uw0
+  id: yabtobg5o9woc
 info:
   title: Cards
   version: '1.0'
@@ -26,6 +26,8 @@ paths:
       - $ref: '#/components/parameters/accountId'
     get:
       summary: List Cards
+      x-stoplight:
+        id: x9rtczd0z03wk
       tags:
         - Cards
       responses:
@@ -45,6 +47,8 @@ paths:
       - $ref: '#/components/parameters/accountId'
     get:
       summary: Get Programs
+      x-stoplight:
+        id: 9l0icp9iolg6k
       tags:
         - Cards
       responses:
@@ -54,6 +58,8 @@ paths:
       description: Retrieve a list of available card programs for the specified account
     post:
       summary: Assign Card Program
+      x-stoplight:
+        id: x8ceblevzg6zo
       operationId: assign-account-card-program
       responses:
         '200':
@@ -70,6 +76,8 @@ paths:
       - $ref: '#/components/parameters/programId'
     get:
       summary: Get Account Card Program
+      x-stoplight:
+        id: 7x6kqdd4i7ut0
       tags:
         - Cards
       responses:
@@ -79,6 +87,8 @@ paths:
       description: Retrieve the specified account card program
     post:
       summary: Update Account Card Program
+      x-stoplight:
+        id: 7xulaqoc30gob
       operationId: update-account-card-program
       responses:
         '200':
@@ -95,6 +105,8 @@ paths:
       - $ref: '#/components/parameters/personId'
     get:
       summary: List Person Cards
+      x-stoplight:
+        id: 02ob3dbw81o1h
       tags:
         - Cards
       responses:
@@ -111,6 +123,8 @@ paths:
         - $ref: '#/components/parameters/fulfillmentState'
     post:
       summary: Issue Card
+      x-stoplight:
+        id: h3brbiysguk4g
       operationId: issue-card
       responses:
         '200':
@@ -125,6 +139,8 @@ paths:
       - $ref: '#/components/parameters/personId'
     get:
       summary: Get Card
+      x-stoplight:
+        id: 3adv3d418rc5t
       tags:
         - Cards
       responses:
@@ -134,6 +150,8 @@ paths:
       description: Retrieve the specified card information
     patch:
       summary: Update Card
+      x-stoplight:
+        id: 6r93m46db1eul
       operationId: update-card
       responses:
         '200':
@@ -145,6 +163,8 @@ paths:
       description: Updates the specified card details
     delete:
       summary: Terminate Card
+      x-stoplight:
+        id: qjgw54fuiacsu
       operationId: terminate-card
       responses:
         '204':
@@ -159,6 +179,8 @@ paths:
       - $ref: '#/components/parameters/cardId'
     post:
       summary: Activate Card
+      x-stoplight:
+        id: jtmr1yd33xma0
       responses:
         '204':
           description: No Content
@@ -169,6 +191,8 @@ paths:
   /cards/webhook/events:
     post:
       summary: Card Events
+      x-stoplight:
+        id: 7oo2ylipj719d
       operationId: cards-webhook-events
       responses:
         '204':
@@ -186,6 +210,8 @@ paths:
   /cards/programs:
     get:
       summary: List Card Programs
+      x-stoplight:
+        id: gtyicd8c7zzjq
       tags:
         - Programs
       responses:
@@ -202,6 +228,8 @@ paths:
         - $ref: '#/components/parameters/active'
     post:
       summary: Create Card Program
+      x-stoplight:
+        id: g40smlmyjwev8
       operationId: create-card-program
       responses:
         '200':
@@ -217,6 +245,8 @@ paths:
       - $ref: '#/components/parameters/programId'
     get:
       summary: Get Card Program
+      x-stoplight:
+        id: r8cjqctjnnlut
       tags:
         - Programs
       responses:
@@ -226,6 +256,8 @@ paths:
       description: Retrieve the specified card program
     post:
       summary: Update Card Program
+      x-stoplight:
+        id: 086ov2gp7exsy
       operationId: update-card-program
       responses:
         '200':
@@ -240,7 +272,7 @@ components:
     Card:
       title: Card
       x-stoplight:
-        id: u7t50wk3vepuj
+        id: fbgjgsuhbjryw
       description: Represents a debit or credit card
       type: object
       properties:
@@ -332,7 +364,7 @@ components:
     CardStates:
       title: CardStates
       x-stoplight:
-        id: 55p2ho5n6wv88
+        id: j77iieisnixvb
       type: string
       enum:
         - inactive
@@ -344,7 +376,7 @@ components:
     CardForms:
       title: CardForms
       x-stoplight:
-        id: mwk78j6qxs7br
+        id: pvsgkhtm7t2oh
       type: string
       enum:
         - virtual
@@ -354,7 +386,7 @@ components:
     CardModes:
       title: Card Modes
       x-stoplight:
-        id: 9k09abbbhuuqh
+        id: t3zafrcdastjf
       type: string
       enum:
         - credit
@@ -363,7 +395,7 @@ components:
     FulfillmentStates:
       title: FulfillmentStates
       x-stoplight:
-        id: uidl4xkbosghf
+        id: 6ecn8v1d9x476
       type: string
       enum:
         - issued
@@ -377,7 +409,7 @@ components:
     CardProgram:
       title: Card Program
       x-stoplight:
-        id: tp08v8vr5kym9
+        id: ha7609z9wkkcd
       type: object
       description: Represents a card program
       properties:
@@ -409,7 +441,7 @@ components:
     CardHolder:
       title: CardHolder
       x-stoplight:
-        id: dl06frwm7zb2e
+        id: 3s9xzz9333342
       type: object
       description: Represents the card holder details
       properties:
@@ -434,7 +466,7 @@ components:
     FullCardProgram:
       title: Full Card Program
       x-stoplight:
-        id: 3iftjvnnlzi09
+        id: 7fsalelz1xlhn
       type: object
       description: Represents a card program
       x-internal: true
@@ -491,7 +523,7 @@ components:
     Networks:
       title: Networks
       x-stoplight:
-        id: s738xjcriz1u8
+        id: 8jtqy5bz7glss
       type: string
       description: Represents the card networks
       enum:
@@ -500,7 +532,7 @@ components:
     IssuingBanks:
       title: IssuingBanks
       x-stoplight:
-        id: z45nxhmzzlond
+        id: tsyztn5et59fo
       type: string
       description: Represents the card issuing banks
       enum:
@@ -509,7 +541,7 @@ components:
     Processors:
       title: Processors
       x-stoplight:
-        id: 88lg32ulewde5
+        id: x6g31pddbyo4v
       type: string
       description: Represents the card processors
       enum:
@@ -519,7 +551,7 @@ components:
     UpdateCardProgram:
       title: UpdateCardProgram
       x-stoplight:
-        id: 8j683eoel2th5
+        id: bvkg43v56fh3s
       type: object
       description: Represents a card program update
       properties:
@@ -542,11 +574,11 @@ components:
           type: boolean
           x-stoplight:
             id: v0dldxejb7i2t
-          description: A value indicating if the card program supports debit          
+          description: A value indicating if the card program supports debit
     AssignCardProgram:
       title: Assign Card Program
       x-stoplight:
-        id: xhgnpsq59aesc
+        id: 31h2eweeqyr2k
       type: object
       properties:
         programId:
