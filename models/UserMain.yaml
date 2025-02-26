@@ -1,0 +1,33 @@
+title: UserMain
+x-stoplight:
+  id: y0bu7dgtkgxk5
+type: object
+properties:
+  id:
+    type: string
+    x-stoplight:
+      id: gwn4jdl9ega82
+  name:
+    type: string
+    x-stoplight:
+      id: snc25mm4pw29v
+  address:
+    type: string
+    x-stoplight:
+      id: dlaxarseduref
+  city:
+    type: string
+    x-stoplight:
+      id: 4so4fqi54usi0
+  district:
+    type: string
+    x-stoplight:
+      id: uw1gu8qk5lkot
+  state:
+    type: string
+    x-stoplight:
+      id: 2pcio0egcbdgx
+  country:
+    type: string
+    x-stoplight:
+      id: w0v6z115ga7j7
